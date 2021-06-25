@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  MartKurly
+//  MarketKulry
 //
-//  Created by 신민희 on 2021/06/21.
+//  Created by 신민희 on 2021/06/25.
 //
 
 import UIKit

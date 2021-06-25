@@ -1,0 +1,493 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E7444A82685A7EF003079C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7444A72685A7EF003079C1 /* AppDelegate.swift */; };
+		5E7444AA2685A7EF003079C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7444A92685A7EF003079C1 /* SceneDelegate.swift */; };
+		5E7444AC2685A7EF003079C1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7444AB2685A7EF003079C1 /* HomeViewController.swift */; };
+		5E7444B12685A7F2003079C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E7444B02685A7F2003079C1 /* Assets.xcassets */; };
+		5E7444B42685A7F2003079C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E7444B22685A7F2003079C1 /* LaunchScreen.storyboard */; };
+		5E7444BE2685A852003079C1 /* RecommandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7444BD2685A852003079C1 /* RecommandViewController.swift */; };
+		5E7444C22685A877003079C1 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7444C12685A877003079C1 /* CategoryViewController.swift */; };
+		5E7444C52685A886003079C1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7444C42685A886003079C1 /* SearchViewController.swift */; };
+		5E7444C82685A893003079C1 /* MyKulryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7444C72685A893003079C1 /* MyKulryViewController.swift */; };
+		5E7444CF2685AD71003079C1 /* AssetsColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7444CE2685AD71003079C1 /* AssetsColor.swift */; };
+		5E7444D22685BE37003079C1 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7444D12685BE37003079C1 /* NavigationBar.swift */; };
+		5E7444D52685E0EA003079C1 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7444D42685E0EA003079C1 /* CustomCell.swift */; };
+		5E7444D92685E111003079C1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5E7444D82685E111003079C1 /* SnapKit */; };
+		5E7444DC2685E14C003079C1 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7444DB2685E14C003079C1 /* PageCell.swift */; };
+		5E7444DF2685E1B1003079C1 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7444DE2685E1B1003079C1 /* HomeTableViewCell.swift */; };
+		5E7444E22685E1CF003079C1 /* CustomMenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7444E12685E1CF003079C1 /* CustomMenuBar.swift */; };
+		5E7444EA2685E54B003079C1 /* KulryRecommandTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7444E92685E54B003079C1 /* KulryRecommandTableViewCell.swift */; };
+		5E7444EE2685E561003079C1 /* NewProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7444ED2685E561003079C1 /* NewProductTableViewCell.swift */; };
+		5E7444F12685E570003079C1 /* BestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7444F02685E570003079C1 /* BestTableViewCell.swift */; };
+		5E7444F42685E57D003079C1 /* ShoppingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7444F32685E57D003079C1 /* ShoppingTableViewCell.swift */; };
+		5E7444F72685E58E003079C1 /* HotDealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7444F62685E58E003079C1 /* HotDealTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5E7444A42685A7EF003079C1 /* MarketKulry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketKulry.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E7444A72685A7EF003079C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5E7444A92685A7EF003079C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5E7444AB2685A7EF003079C1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5E7444B02685A7F2003079C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E7444B32685A7F2003079C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5E7444B52685A7F2003079C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E7444BD2685A852003079C1 /* RecommandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommandViewController.swift; sourceTree = "<group>"; };
+		5E7444C12685A877003079C1 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		5E7444C42685A886003079C1 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		5E7444C72685A893003079C1 /* MyKulryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyKulryViewController.swift; sourceTree = "<group>"; };
+		5E7444CE2685AD71003079C1 /* AssetsColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsColor.swift; sourceTree = "<group>"; };
+		5E7444D12685BE37003079C1 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		5E7444D42685E0EA003079C1 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		5E7444DB2685E14C003079C1 /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
+		5E7444DE2685E1B1003079C1 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		5E7444E12685E1CF003079C1 /* CustomMenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMenuBar.swift; sourceTree = "<group>"; };
+		5E7444E92685E54B003079C1 /* KulryRecommandTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KulryRecommandTableViewCell.swift; sourceTree = "<group>"; };
+		5E7444ED2685E561003079C1 /* NewProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProductTableViewCell.swift; sourceTree = "<group>"; };
+		5E7444F02685E570003079C1 /* BestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestTableViewCell.swift; sourceTree = "<group>"; };
+		5E7444F32685E57D003079C1 /* ShoppingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTableViewCell.swift; sourceTree = "<group>"; };
+		5E7444F62685E58E003079C1 /* HotDealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotDealTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E7444A12685A7EE003079C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E7444D92685E111003079C1 /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E74449B2685A7EE003079C1 = {
+			isa = PBXGroup;
+			children = (
+				5E7444A62685A7EF003079C1 /* MarketKulry */,
+				5E7444A52685A7EF003079C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5E7444A52685A7EF003079C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E7444A42685A7EF003079C1 /* MarketKulry.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E7444A62685A7EF003079C1 /* MarketKulry */ = {
+			isa = PBXGroup;
+			children = (
+				5E7444CA2685ACF4003079C1 /* Models */,
+				5E7444CB2685ACFD003079C1 /* Views */,
+				5E7444CC2685AD02003079C1 /* Controllers */,
+				5E7444CD2685AD13003079C1 /* Supports */,
+				5E7444B52685A7F2003079C1 /* Info.plist */,
+			);
+			path = MarketKulry;
+			sourceTree = "<group>";
+		};
+		5E7444CA2685ACF4003079C1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5E7444D42685E0EA003079C1 /* CustomCell.swift */,
+				5E7444DB2685E14C003079C1 /* PageCell.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5E7444CB2685ACFD003079C1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5E7444E82685E4FC003079C1 /* HotDealTableViewCell */,
+				5E7444E72685E4D6003079C1 /* ShoppingTableViewCell */,
+				5E7444E62685E4C4003079C1 /* BestTableViewCell */,
+				5E7444E52685E487003079C1 /* NewProductTableViewCell */,
+				5E7444E42685E470003079C1 /* KulryRecommandTableViewCell */,
+				5E7444CE2685AD71003079C1 /* AssetsColor.swift */,
+				5E7444D12685BE37003079C1 /* NavigationBar.swift */,
+				5E7444DE2685E1B1003079C1 /* HomeTableViewCell.swift */,
+				5E7444E12685E1CF003079C1 /* CustomMenuBar.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5E7444CC2685AD02003079C1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5E7444AB2685A7EF003079C1 /* HomeViewController.swift */,
+				5E7444BD2685A852003079C1 /* RecommandViewController.swift */,
+				5E7444C12685A877003079C1 /* CategoryViewController.swift */,
+				5E7444C42685A886003079C1 /* SearchViewController.swift */,
+				5E7444C72685A893003079C1 /* MyKulryViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5E7444CD2685AD13003079C1 /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				5E7444A72685A7EF003079C1 /* AppDelegate.swift */,
+				5E7444A92685A7EF003079C1 /* SceneDelegate.swift */,
+				5E7444B02685A7F2003079C1 /* Assets.xcassets */,
+				5E7444B22685A7F2003079C1 /* LaunchScreen.storyboard */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		5E7444E42685E470003079C1 /* KulryRecommandTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5E7444E92685E54B003079C1 /* KulryRecommandTableViewCell.swift */,
+			);
+			path = KulryRecommandTableViewCell;
+			sourceTree = "<group>";
+		};
+		5E7444E52685E487003079C1 /* NewProductTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5E7444ED2685E561003079C1 /* NewProductTableViewCell.swift */,
+			);
+			path = NewProductTableViewCell;
+			sourceTree = "<group>";
+		};
+		5E7444E62685E4C4003079C1 /* BestTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5E7444F02685E570003079C1 /* BestTableViewCell.swift */,
+			);
+			path = BestTableViewCell;
+			sourceTree = "<group>";
+		};
+		5E7444E72685E4D6003079C1 /* ShoppingTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5E7444F32685E57D003079C1 /* ShoppingTableViewCell.swift */,
+			);
+			path = ShoppingTableViewCell;
+			sourceTree = "<group>";
+		};
+		5E7444E82685E4FC003079C1 /* HotDealTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5E7444F62685E58E003079C1 /* HotDealTableViewCell.swift */,
+			);
+			path = HotDealTableViewCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E7444A32685A7EE003079C1 /* MarketKulry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E7444B82685A7F2003079C1 /* Build configuration list for PBXNativeTarget "MarketKulry" */;
+			buildPhases = (
+				5E7444A02685A7EE003079C1 /* Sources */,
+				5E7444A12685A7EE003079C1 /* Frameworks */,
+				5E7444A22685A7EE003079C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarketKulry;
+			packageProductDependencies = (
+				5E7444D82685E111003079C1 /* SnapKit */,
+			);
+			productName = MarketKulry;
+			productReference = 5E7444A42685A7EF003079C1 /* MarketKulry.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E74449C2685A7EE003079C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					5E7444A32685A7EE003079C1 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 5E74449F2685A7EE003079C1 /* Build configuration list for PBXProject "MarketKulry" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E74449B2685A7EE003079C1;
+			packageReferences = (
+				5E7444D72685E111003079C1 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
+			productRefGroup = 5E7444A52685A7EF003079C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E7444A32685A7EE003079C1 /* MarketKulry */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E7444A22685A7EE003079C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E7444B42685A7F2003079C1 /* LaunchScreen.storyboard in Resources */,
+				5E7444B12685A7F2003079C1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E7444A02685A7EE003079C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E7444F42685E57D003079C1 /* ShoppingTableViewCell.swift in Sources */,
+				5E7444C52685A886003079C1 /* SearchViewController.swift in Sources */,
+				5E7444C22685A877003079C1 /* CategoryViewController.swift in Sources */,
+				5E7444D52685E0EA003079C1 /* CustomCell.swift in Sources */,
+				5E7444F12685E570003079C1 /* BestTableViewCell.swift in Sources */,
+				5E7444AC2685A7EF003079C1 /* HomeViewController.swift in Sources */,
+				5E7444EA2685E54B003079C1 /* KulryRecommandTableViewCell.swift in Sources */,
+				5E7444BE2685A852003079C1 /* RecommandViewController.swift in Sources */,
+				5E7444A82685A7EF003079C1 /* AppDelegate.swift in Sources */,
+				5E7444F72685E58E003079C1 /* HotDealTableViewCell.swift in Sources */,
+				5E7444DF2685E1B1003079C1 /* HomeTableViewCell.swift in Sources */,
+				5E7444DC2685E14C003079C1 /* PageCell.swift in Sources */,
+				5E7444D22685BE37003079C1 /* NavigationBar.swift in Sources */,
+				5E7444E22685E1CF003079C1 /* CustomMenuBar.swift in Sources */,
+				5E7444AA2685A7EF003079C1 /* SceneDelegate.swift in Sources */,
+				5E7444CF2685AD71003079C1 /* AssetsColor.swift in Sources */,
+				5E7444C82685A893003079C1 /* MyKulryViewController.swift in Sources */,
+				5E7444EE2685E561003079C1 /* NewProductTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5E7444B22685A7F2003079C1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E7444B32685A7F2003079C1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E7444B62685A7F2003079C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5E7444B72685A7F2003079C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E7444B92685A7F2003079C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3GQF74JFF8;
+				INFOPLIST_FILE = MarketKulry/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.minheeshin93.MarketKulry;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5E7444BA2685A7F2003079C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3GQF74JFF8;
+				INFOPLIST_FILE = MarketKulry/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.minheeshin93.MarketKulry;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E74449F2685A7EE003079C1 /* Build configuration list for PBXProject "MarketKulry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E7444B62685A7F2003079C1 /* Debug */,
+				5E7444B72685A7F2003079C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E7444B82685A7F2003079C1 /* Build configuration list for PBXNativeTarget "MarketKulry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E7444B92685A7F2003079C1 /* Debug */,
+				5E7444BA2685A7F2003079C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5E7444D72685E111003079C1 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5E7444D82685E111003079C1 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E7444D72685E111003079C1 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5E74449C2685A7EE003079C1 /* Project object */;
+}
