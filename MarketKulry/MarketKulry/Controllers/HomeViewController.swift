@@ -45,19 +45,18 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = pageCollectionView.dequeueReusableCell(withReuseIdentifier: PageCell.identifier, for: indexPath) as! PageCell
-//        cell.label.text = "\(indexPath.row + 1)번째 뷰"
-        print(indexPath)
+
         switch indexPath {
         case [0, 0]:
-            cell.kulryRecommandTableView.backgroundColor = .red
+            cell.setKulryRecommandTableView()
         case [0, 1]:
-            cell.newProductTableView.backgroundColor = .orange
+            cell.setNewProductTableView()
         case [0, 2]:
-            cell.bestTableView.backgroundColor = .yellow
+            cell.setBestTableView()
         case [0, 3]:
-            cell.shoppingTableView.backgroundColor = .green
+            cell.setShoppingTableView()
         case [0, 4]:
-            cell.hotDealTableView.backgroundColor = .blue
+            cell.setHotDealTableView()
         default:
             break
         }

@@ -14,7 +14,7 @@ class KulryRecommandTableViewCell: UITableViewCell {
    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
        super.init(style: style, reuseIdentifier: reuseIdentifier)
        setUI()
-    backgroundColor = .red
+    contentView.backgroundColor = .red
        
    }
    

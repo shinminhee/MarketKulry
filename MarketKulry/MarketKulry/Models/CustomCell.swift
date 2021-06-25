@@ -25,7 +25,7 @@ class CustomCell: UICollectionViewCell {
     }
     override var isSelected: Bool {
         didSet {
-            print("Changed")
+//            print("Changed")
             self.label.textColor = isSelected ? .appColor(.mainColor) : .lightGray
         }
     }

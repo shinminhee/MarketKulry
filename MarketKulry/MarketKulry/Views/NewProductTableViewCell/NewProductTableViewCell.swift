@@ -14,7 +14,7 @@ class NewProductTableViewCell: UITableViewCell {
    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
        super.init(style: style, reuseIdentifier: reuseIdentifier)
        setUI()
-    backgroundColor = .orange
+    contentView.backgroundColor = .orange
 
        
    }

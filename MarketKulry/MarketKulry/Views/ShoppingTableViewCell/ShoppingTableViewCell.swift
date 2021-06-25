@@ -14,7 +14,7 @@ class ShoppingTableViewCell: UITableViewCell {
    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
        super.init(style: style, reuseIdentifier: reuseIdentifier)
        setUI()
-    backgroundColor = .green
+    contentView.backgroundColor = .green
 
    }
    
