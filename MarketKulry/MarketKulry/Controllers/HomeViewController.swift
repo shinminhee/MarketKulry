@@ -13,7 +13,7 @@ class HomeViewController: UIViewController {
     let cartBackbarbutton = UIBarButtonItem(image: (UIImage(systemName: "cart")?.withTintColor(.white, renderingMode: .alwaysOriginal)), style: UIBarButtonItem.Style.plain, target: self, action: #selector(handleBarButton(_:)))
     let logo = UIImage(named: "logo")
     lazy var pageCollectionView = UICollectionView(frame: .zero, collectionViewLayout: pageCollectionViewLayout)
-    var pageCollectionViewLayout = UICollectionViewFlowLayout()
+    let pageCollectionViewLayout = UICollectionViewFlowLayout()
     var customMenuBar = CustomMenuBar()
     
     
@@ -28,7 +28,6 @@ class HomeViewController: UIViewController {
     }
 }
 
-
 extension HomeViewController {
     @objc
     func handleBarButton(_ sender: UIBarButtonItem) {
@@ -41,11 +40,12 @@ extension HomeViewController: CustomMenuBarDelegate {
         self.pageCollectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
     }
 }
+
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = pageCollectionView.dequeueReusableCell(withReuseIdentifier: PageCell.identifier, for: indexPath) as! PageCell
-
+        
         switch indexPath {
         case [0, 0]:
             cell.setKulryRecommandTableView()

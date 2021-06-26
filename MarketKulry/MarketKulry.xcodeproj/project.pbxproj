@@ -28,6 +28,7 @@
 		5E7444F12685E570003079C1 /* BestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7444F02685E570003079C1 /* BestTableViewCell.swift */; };
 		5E7444F42685E57D003079C1 /* ShoppingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7444F32685E57D003079C1 /* ShoppingTableViewCell.swift */; };
 		5E7444F72685E58E003079C1 /* HotDealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7444F62685E58E003079C1 /* HotDealTableViewCell.swift */; };
+		5E7444FC268604E4003079C1 /* KulryRecommandCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7444FB268604E4003079C1 /* KulryRecommandCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		5E7444F02685E570003079C1 /* BestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestTableViewCell.swift; sourceTree = "<group>"; };
 		5E7444F32685E57D003079C1 /* ShoppingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTableViewCell.swift; sourceTree = "<group>"; };
 		5E7444F62685E58E003079C1 /* HotDealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotDealTableViewCell.swift; sourceTree = "<group>"; };
+		5E7444FB268604E4003079C1 /* KulryRecommandCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KulryRecommandCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				5E7444E92685E54B003079C1 /* KulryRecommandTableViewCell.swift */,
+				5E7444FB268604E4003079C1 /* KulryRecommandCollectionViewCell.swift */,
 			);
 			path = KulryRecommandTableViewCell;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				5E7444BE2685A852003079C1 /* RecommandViewController.swift in Sources */,
 				5E7444A82685A7EF003079C1 /* AppDelegate.swift in Sources */,
 				5E7444F72685E58E003079C1 /* HotDealTableViewCell.swift in Sources */,
+				5E7444FC268604E4003079C1 /* KulryRecommandCollectionViewCell.swift in Sources */,
 				5E7444DF2685E1B1003079C1 /* HomeTableViewCell.swift in Sources */,
 				5E7444DC2685E14C003079C1 /* PageCell.swift in Sources */,
 				5E7444D22685BE37003079C1 /* NavigationBar.swift in Sources */,

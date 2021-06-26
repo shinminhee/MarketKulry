@@ -36,6 +36,12 @@ extension PageCell: UITableViewDataSource {
         case kulryRecommandTableView:
             guard let kulryRecommandCell = tableView.dequeueReusableCell(withIdentifier: KulryRecommandTableViewCell.identifier, for: indexPath) as? KulryRecommandTableViewCell else { fatalError() }
             kulryRecommandCell.backgroundColor = .red
+            switch indexPath {
+            case [0, 1]:
+                kulryRecommandCell.setSecondCell()
+            default:
+                break
+            }
             return kulryRecommandCell
         case newProductTableView:
             guard let newProductCell = tableView.dequeueReusableCell(withIdentifier: NewProductTableViewCell.identifier, for: indexPath) as? NewProductTableViewCell else { fatalError() }
@@ -57,6 +63,29 @@ extension PageCell: UITableViewDataSource {
            return UITableViewCell()
         }
     }
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        switch tableView {
+//        case kulryRecommandTableView:
+//            switch indexPath {
+//            case [0, 5]:
+//                return 150
+//                print(123)
+//            default:
+//                return 150
+//            }
+//        case newProductTableView:
+//            return 140
+//        case bestTableView:
+//            return 140
+//        case shoppingTableView:
+//            return 140
+//        case hotDealTableView:
+//            return 140
+//
+//        default:
+//            return 200
+//        }
+//    }
 }
 
 // MARK: - UI
@@ -79,7 +108,8 @@ extension PageCell {
         kulryRecommandTableView.dataSource = self
         kulryRecommandTableView.register(KulryRecommandTableViewCell.self, forCellReuseIdentifier: KulryRecommandTableViewCell.identifier)
         kulryRecommandTableView.backgroundColor = .red
-        
+        kulryRecommandTableView.rowHeight = 300
+
     }
     func setNewProductTableView() {
         contentView.addSubview(newProductTableView)
@@ -89,7 +119,6 @@ extension PageCell {
         newProductTableView.dataSource = self
         newProductTableView.register(NewProductTableViewCell.self, forCellReuseIdentifier: NewProductTableViewCell.identifier)
         newProductTableView.backgroundColor = .orange
-        
     }
     func setBestTableView() {
         contentView.addSubview(bestTableView)
@@ -99,7 +128,6 @@ extension PageCell {
         bestTableView.dataSource = self
         bestTableView.register(BestTableViewCell.self, forCellReuseIdentifier: BestTableViewCell.identifier)
         bestTableView.backgroundColor = .yellow
-        
     }
     func setShoppingTableView() {
         contentView.addSubview(shoppingTableView)
@@ -109,7 +137,6 @@ extension PageCell {
         shoppingTableView.dataSource = self
         shoppingTableView.register(ShoppingTableViewCell.self, forCellReuseIdentifier: ShoppingTableViewCell.identifier)
         shoppingTableView.backgroundColor = .green
-        
     }
     func setHotDealTableView() {
         contentView.addSubview(hotDealTableView)
@@ -119,7 +146,6 @@ extension PageCell {
         hotDealTableView.dataSource = self
         hotDealTableView.register(HotDealTableViewCell.self, forCellReuseIdentifier: HotDealTableViewCell.identifier)
         hotDealTableView.backgroundColor = .blue
-        
     }
 }
 
