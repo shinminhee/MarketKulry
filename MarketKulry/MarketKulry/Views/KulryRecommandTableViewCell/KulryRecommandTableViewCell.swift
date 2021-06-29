@@ -13,7 +13,7 @@ class KulryRecommandTableViewCell: UITableViewCell {
     lazy var productCollectionView = UICollectionView(frame: .zero, collectionViewLayout: productCollectionViewLayout)
     let productCollectionViewLayout = UICollectionViewFlowLayout()
     let type = ["종합리모델링", "도배", "시트필름", "욕실/타일", "주방", "바닥재", "창호/샷시", "도어/문틀", "페인트", "커텐블라인드", "목공", "전기/조명", "설비"]
-    let titleLable = UILabel()
+    let titleLabel = UILabel()
 
 
    
@@ -37,7 +37,7 @@ extension KulryRecommandTableViewCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: KulryRecommandCollectionViewCell.identifier, for: indexPath) as? KulryRecommandCollectionViewCell else { fatalError() }
         cell.menuImage.backgroundColor = .black
-        cell.menuLable.backgroundColor = . blue
+        cell.menuLabel.backgroundColor = . blue
         return cell
     }
 }
@@ -54,29 +54,31 @@ extension KulryRecommandTableViewCell {
        
    }
     func setSecondCell() {
-        [titleLable, productCollectionView].forEach {
+        [titleLabel, productCollectionView].forEach {
             contentView.addSubview($0)
         }
-        titleLable.snp.makeConstraints {
-            $0.top.leading.equalToSuperview().inset(10)
-            $0.width.equalTo(250)
+        contentView.backgroundColor = .green
+        titleLabel.snp.makeConstraints {
+            $0.top.equalToSuperview().offset(10)
+            $0.leading.trailing.equalToSuperview().inset(10)
             $0.height.equalTo(50)
         }
+        titleLabel.backgroundColor = .blue
         productCollectionView.snp.makeConstraints {
-            $0.top.equalTo(titleLable.snp.bottom)
+            $0.top.equalTo(titleLabel.snp.bottom)
             $0.leading.trailing.bottom.equalToSuperview()
         }
-        titleLable.text = "이 상품 어때요?"
-        titleLable.font = UIFont.systemFont(ofSize: 25)
+        titleLabel.text = "이 상품 어때요?"
+        titleLabel.font = UIFont.systemFont(ofSize: 25)
         productCollectionViewLayout.scrollDirection = .horizontal
         productCollectionViewLayout.minimumInteritemSpacing = 0
-        productCollectionViewLayout.minimumLineSpacing = 0
-        productCollectionViewLayout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        productCollectionViewLayout.minimumLineSpacing = 10
+        productCollectionViewLayout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
         productCollectionViewLayout.itemSize = CGSize(width: 140, height: 125)
 
         productCollectionView.register(KulryRecommandCollectionViewCell.self, forCellWithReuseIdentifier: KulryRecommandCollectionViewCell.identifier)
         productCollectionView.dataSource = self
-        productCollectionView.backgroundColor = .white
+        productCollectionView.backgroundColor = .yellow
         productCollectionView.showsHorizontalScrollIndicator = false
     }
 }

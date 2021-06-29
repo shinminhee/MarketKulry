@@ -9,8 +9,6 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    let markBackbarbutton = UIBarButtonItem(image: (UIImage(systemName: "mappin.and.ellipse")?.withTintColor(.white, renderingMode: .alwaysOriginal)), style: UIBarButtonItem.Style.plain, target: self, action: #selector(handleBarButton(_:)))
-    let cartBackbarbutton = UIBarButtonItem(image: (UIImage(systemName: "cart")?.withTintColor(.white, renderingMode: .alwaysOriginal)), style: UIBarButtonItem.Style.plain, target: self, action: #selector(handleBarButton(_:)))
     let logo = UIImage(named: "logo")
     lazy var pageCollectionView = UICollectionView(frame: .zero, collectionViewLayout: pageCollectionViewLayout)
     let pageCollectionViewLayout = UICollectionViewFlowLayout()
@@ -19,7 +17,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.rightBarButtonItems = [cartBackbarbutton, markBackbarbutton]
+        setBarItems()
         let imageView = UIImageView(image: logo)
         self.navigationItem.titleView = imageView
         view.backgroundColor = UIColor.appColor(.mainColor)
@@ -28,11 +26,6 @@ class HomeViewController: UIViewController {
     }
 }
 
-extension HomeViewController {
-    @objc
-    func handleBarButton(_ sender: UIBarButtonItem) {
-    }
-}
 
 extension HomeViewController: CustomMenuBarDelegate {
     func customMenuBar(scrollTo index: Int) {
@@ -44,7 +37,7 @@ extension HomeViewController: CustomMenuBarDelegate {
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = pageCollectionView.dequeueReusableCell(withReuseIdentifier: PageCell.identifier, for: indexPath) as! PageCell
+        let cell = pageCollectionView.dequeueReusableCell(withReuseIdentifier: HomePageCell.identifier, for: indexPath) as! HomePageCell
         
         switch indexPath {
         case [0, 0]:
@@ -115,7 +108,7 @@ extension HomeViewController {
         pageCollectionView.backgroundColor = .gray
         pageCollectionView.showsHorizontalScrollIndicator = false
         pageCollectionView.isPagingEnabled = true
-        pageCollectionView.register(PageCell.self, forCellWithReuseIdentifier: PageCell.identifier)
+        pageCollectionView.register(HomePageCell.self, forCellWithReuseIdentifier: HomePageCell.identifier)
         
     }
     final private func setNavigation() {

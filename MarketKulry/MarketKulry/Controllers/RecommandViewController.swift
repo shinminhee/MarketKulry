@@ -11,12 +11,16 @@ class RecommandViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setBarItems()
         navigationController?.navigationBar.topItem?.title = "추천"
         view.backgroundColor = UIColor.appColor(.mainColor)
 
         
     }
     
+//    override func handleBarButton(_ sender: UIBarButtonItem) {
+//        print(#function, 2)
+//    }
 
     /*
     // MARK: - Navigation

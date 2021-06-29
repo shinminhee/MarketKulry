@@ -20,7 +20,7 @@
 		5E7444D22685BE37003079C1 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7444D12685BE37003079C1 /* NavigationBar.swift */; };
 		5E7444D52685E0EA003079C1 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7444D42685E0EA003079C1 /* CustomCell.swift */; };
 		5E7444D92685E111003079C1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5E7444D82685E111003079C1 /* SnapKit */; };
-		5E7444DC2685E14C003079C1 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7444DB2685E14C003079C1 /* PageCell.swift */; };
+		5E7444DC2685E14C003079C1 /* HomePageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7444DB2685E14C003079C1 /* HomePageCell.swift */; };
 		5E7444DF2685E1B1003079C1 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7444DE2685E1B1003079C1 /* HomeTableViewCell.swift */; };
 		5E7444E22685E1CF003079C1 /* CustomMenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7444E12685E1CF003079C1 /* CustomMenuBar.swift */; };
 		5E7444EA2685E54B003079C1 /* KulryRecommandTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7444E92685E54B003079C1 /* KulryRecommandTableViewCell.swift */; };
@@ -29,6 +29,9 @@
 		5E7444F42685E57D003079C1 /* ShoppingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7444F32685E57D003079C1 /* ShoppingTableViewCell.swift */; };
 		5E7444F72685E58E003079C1 /* HotDealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7444F62685E58E003079C1 /* HotDealTableViewCell.swift */; };
 		5E7444FC268604E4003079C1 /* KulryRecommandCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7444FB268604E4003079C1 /* KulryRecommandCollectionViewCell.swift */; };
+		5E7445012689E751003079C1 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7445002689E751003079C1 /* UIViewController+Extension.swift */; };
+		5E7445052689EE86003079C1 /* SearchAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7445042689EE86003079C1 /* SearchAddressViewController.swift */; };
+		5E7445082689EE94003079C1 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7445072689EE94003079C1 /* CartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,7 +49,7 @@
 		5E7444CE2685AD71003079C1 /* AssetsColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsColor.swift; sourceTree = "<group>"; };
 		5E7444D12685BE37003079C1 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		5E7444D42685E0EA003079C1 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
-		5E7444DB2685E14C003079C1 /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
+		5E7444DB2685E14C003079C1 /* HomePageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCell.swift; sourceTree = "<group>"; };
 		5E7444DE2685E1B1003079C1 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		5E7444E12685E1CF003079C1 /* CustomMenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMenuBar.swift; sourceTree = "<group>"; };
 		5E7444E92685E54B003079C1 /* KulryRecommandTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KulryRecommandTableViewCell.swift; sourceTree = "<group>"; };
@@ -55,6 +58,9 @@
 		5E7444F32685E57D003079C1 /* ShoppingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTableViewCell.swift; sourceTree = "<group>"; };
 		5E7444F62685E58E003079C1 /* HotDealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotDealTableViewCell.swift; sourceTree = "<group>"; };
 		5E7444FB268604E4003079C1 /* KulryRecommandCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KulryRecommandCollectionViewCell.swift; sourceTree = "<group>"; };
+		5E7445002689E751003079C1 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		5E7445042689EE86003079C1 /* SearchAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAddressViewController.swift; sourceTree = "<group>"; };
+		5E7445072689EE94003079C1 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,7 @@
 		5E7444A62685A7EF003079C1 /* MarketKulry */ = {
 			isa = PBXGroup;
 			children = (
+				5E7444FF2689E731003079C1 /* Extensions */,
 				5E7444CA2685ACF4003079C1 /* Models */,
 				5E7444CB2685ACFD003079C1 /* Views */,
 				5E7444CC2685AD02003079C1 /* Controllers */,
@@ -101,7 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				5E7444D42685E0EA003079C1 /* CustomCell.swift */,
-				5E7444DB2685E14C003079C1 /* PageCell.swift */,
+				5E7444DB2685E14C003079C1 /* HomePageCell.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -130,6 +137,8 @@
 				5E7444C12685A877003079C1 /* CategoryViewController.swift */,
 				5E7444C42685A886003079C1 /* SearchViewController.swift */,
 				5E7444C72685A893003079C1 /* MyKulryViewController.swift */,
+				5E7445042689EE86003079C1 /* SearchAddressViewController.swift */,
+				5E7445072689EE94003079C1 /* CartViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -184,6 +193,14 @@
 				5E7444F62685E58E003079C1 /* HotDealTableViewCell.swift */,
 			);
 			path = HotDealTableViewCell;
+			sourceTree = "<group>";
+		};
+		5E7444FF2689E731003079C1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5E7445002689E751003079C1 /* UIViewController+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,17 +283,20 @@
 				5E7444C22685A877003079C1 /* CategoryViewController.swift in Sources */,
 				5E7444D52685E0EA003079C1 /* CustomCell.swift in Sources */,
 				5E7444F12685E570003079C1 /* BestTableViewCell.swift in Sources */,
+				5E7445052689EE86003079C1 /* SearchAddressViewController.swift in Sources */,
 				5E7444AC2685A7EF003079C1 /* HomeViewController.swift in Sources */,
 				5E7444EA2685E54B003079C1 /* KulryRecommandTableViewCell.swift in Sources */,
 				5E7444BE2685A852003079C1 /* RecommandViewController.swift in Sources */,
+				5E7445012689E751003079C1 /* UIViewController+Extension.swift in Sources */,
 				5E7444A82685A7EF003079C1 /* AppDelegate.swift in Sources */,
 				5E7444F72685E58E003079C1 /* HotDealTableViewCell.swift in Sources */,
 				5E7444FC268604E4003079C1 /* KulryRecommandCollectionViewCell.swift in Sources */,
 				5E7444DF2685E1B1003079C1 /* HomeTableViewCell.swift in Sources */,
-				5E7444DC2685E14C003079C1 /* PageCell.swift in Sources */,
+				5E7444DC2685E14C003079C1 /* HomePageCell.swift in Sources */,
 				5E7444D22685BE37003079C1 /* NavigationBar.swift in Sources */,
 				5E7444E22685E1CF003079C1 /* CustomMenuBar.swift in Sources */,
 				5E7444AA2685A7EF003079C1 /* SceneDelegate.swift in Sources */,
+				5E7445082689EE94003079C1 /* CartViewController.swift in Sources */,
 				5E7444CF2685AD71003079C1 /* AssetsColor.swift in Sources */,
 				5E7444C82685A893003079C1 /* MyKulryViewController.swift in Sources */,
 				5E7444EE2685E561003079C1 /* NewProductTableViewCell.swift in Sources */,

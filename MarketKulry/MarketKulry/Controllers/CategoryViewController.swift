@@ -11,6 +11,7 @@ class CategoryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setBarItems()
         navigationController?.navigationBar.topItem?.title = "카테고리"
         view.backgroundColor = UIColor.appColor(.mainColor)
 

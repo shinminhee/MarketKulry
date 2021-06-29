@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let categoryVC = CategoryViewController()
         let searchVC = SearchViewController()
         let myKulryVC = MyKulryViewController()
-        
+       
         UINavigationBar.setTransparentTabbar()
         UINavigationBar.setTransparentNavigation()
         
@@ -54,6 +54,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let categoryNavigation = UINavigationController(rootViewController: categoryVC)
         let searchNavigation = UINavigationController(rootViewController: searchVC)
         let myKulryNavigation = UINavigationController(rootViewController: myKulryVC)
+       
+        
         tabBarController.viewControllers
             = [homeNavigation, recommandNavigation, categoryNavigation, searchNavigation, myKulryNavigation]
         window?.rootViewController = tabBarController

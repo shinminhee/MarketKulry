@@ -8,9 +8,9 @@
 import SnapKit
 import UIKit
 
-class PageCell: UICollectionViewCell {
+class HomePageCell: UICollectionViewCell {
     // MARK: - Properties
-    static let identifier = "PageCell"
+    static let identifier = "HomePageCell"
     let kulryRecommandTableView = UITableView()
     let newProductTableView = UITableView()
     let bestTableView = UITableView()
@@ -26,7 +26,7 @@ class PageCell: UICollectionViewCell {
     }
 }
 
-extension PageCell: UITableViewDataSource {
+extension HomePageCell: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 50
     }
@@ -57,7 +57,7 @@ extension PageCell: UITableViewDataSource {
             return shoppingCell
         case hotDealTableView:
             guard let hotDealCell = tableView.dequeueReusableCell(withIdentifier: HotDealTableViewCell.identifier, for: indexPath) as? HotDealTableViewCell else { fatalError() }
-            hotDealCell.backgroundColor = .blue
+            hotDealCell.hotDealImageView.backgroundColor = .systemPink
             return hotDealCell
         default:
            return UITableViewCell()
@@ -67,7 +67,7 @@ extension PageCell: UITableViewDataSource {
 //        switch tableView {
 //        case kulryRecommandTableView:
 //            switch indexPath {
-//            case [0, 5]:
+//            case [0, 1]:
 //                return 150
 //                print(123)
 //            default:
@@ -89,7 +89,7 @@ extension PageCell: UITableViewDataSource {
 }
 
 // MARK: - UI
-extension PageCell {
+extension HomePageCell {
 //    final private func setUI() {
 //        setBasics()
 //        setLayout()
@@ -108,7 +108,7 @@ extension PageCell {
         kulryRecommandTableView.dataSource = self
         kulryRecommandTableView.register(KulryRecommandTableViewCell.self, forCellReuseIdentifier: KulryRecommandTableViewCell.identifier)
         kulryRecommandTableView.backgroundColor = .red
-        kulryRecommandTableView.rowHeight = 300
+        kulryRecommandTableView.rowHeight = 220
 
     }
     func setNewProductTableView() {
@@ -145,7 +145,11 @@ extension PageCell {
         }
         hotDealTableView.dataSource = self
         hotDealTableView.register(HotDealTableViewCell.self, forCellReuseIdentifier: HotDealTableViewCell.identifier)
-        hotDealTableView.backgroundColor = .blue
+        hotDealTableView.rowHeight = 200
+        hotDealTableView.separatorStyle = UITableViewCell.SeparatorStyle.none
+
+
     }
+    
 }
 

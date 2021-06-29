@@ -11,6 +11,7 @@ class MyKulryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setBarItems()
         navigationController?.navigationBar.topItem?.title = "마이컬리"
         view.backgroundColor = UIColor.appColor(.mainColor)
 

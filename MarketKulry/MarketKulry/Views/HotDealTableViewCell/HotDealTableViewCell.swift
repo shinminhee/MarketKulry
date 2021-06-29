@@ -10,12 +10,11 @@ import UIKit
 class HotDealTableViewCell: UITableViewCell {
 
     static let identifier = "HotDealTableViewCell"
+    let hotDealImageView = UIImageView()
    
    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
        super.init(style: style, reuseIdentifier: reuseIdentifier)
        setUI()
-    contentView.backgroundColor = .blue
-
    }
    
    required init?(coder: NSCoder) {
@@ -29,9 +28,14 @@ extension HotDealTableViewCell {
        setLayout()
    }
    final private func setBasic() {
-       
+    contentView.addSubview(hotDealImageView)
+    hotDealImageView.snp.makeConstraints {
+        $0.leading.trailing.equalToSuperview()
+        $0.top.bottom.equalToSuperview().inset(10)
+    }       
    }
    final private func setLayout() {
+    
        
    }
    

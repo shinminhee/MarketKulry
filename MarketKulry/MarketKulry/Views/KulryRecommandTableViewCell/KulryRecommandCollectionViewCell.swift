@@ -10,7 +10,7 @@ import UIKit
 class KulryRecommandCollectionViewCell: UICollectionViewCell {
     static let identifier = "KulryRecommandCollectionViewCell"
     let menuImage = UIImageView()
-    let menuLable = UILabel()
+    let menuLabel = UILabel()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -29,14 +29,14 @@ class KulryRecommandCollectionViewCell: UICollectionViewCell {
         
     }
     func setLayout() {
-        [menuImage, menuLable].forEach {
+        [menuImage, menuLabel].forEach {
             contentView.addSubview($0)
         }
         menuImage.snp.makeConstraints {
-            $0.top.leading.trailing.equalToSuperview().inset(10)
+            $0.top.leading.trailing.equalToSuperview()
             $0.height.equalTo(150)
         }
-        menuLable.snp.makeConstraints {
+        menuLabel.snp.makeConstraints {
             $0.centerX.equalTo(menuImage)
             $0.top.equalTo(menuImage.snp.bottom).offset(10)
             $0.height.equalTo(20)
