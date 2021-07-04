@@ -12,10 +12,12 @@ class HomePageCell: UICollectionViewCell {
     // MARK: - Properties
     static let identifier = "HomePageCell"
     let kulryRecommandTableView = UITableView()
-    let newProductTableView = UITableView()
-    let bestTableView = UITableView()
     let shoppingTableView = UITableView()
     let hotDealTableView = UITableView()
+    lazy var newProductCollectionView = UICollectionView(frame: .zero, collectionViewLayout: newProductCollectionViewLayout)
+    let newProductCollectionViewLayout = UICollectionViewFlowLayout()
+    lazy var bestCollectionView = UICollectionView(frame: .zero, collectionViewLayout: bestCollectionViewLayout)
+    let bestCollectionViewLayout = UICollectionViewFlowLayout()
 
     // MARK: - LifeCycle
     override init(frame: CGRect) {
@@ -24,6 +26,34 @@ class HomePageCell: UICollectionViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+}
+
+extension HomePageCell: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 50
+
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        switch collectionView {
+        case newProductCollectionView:
+            guard let newProductCell =  collectionView.dequeueReusableCell(withReuseIdentifier: NewProductCollectionViewCell.identifier, for: indexPath) as? NewProductCollectionViewCell else { fatalError() }
+            newProductCell.backgroundColor = .orange
+            newProductCell.productImage.backgroundColor = .purple
+            newProductCell.productLabel.backgroundColor = .black
+            return newProductCell
+        case bestCollectionView:
+            guard let bestCell = collectionView.dequeueReusableCell(withReuseIdentifier: bestCollectionViewCell.identifier, for: indexPath) as? bestCollectionViewCell else { fatalError() }
+            bestCell.backgroundColor = .yellow
+            bestCell.bestImage.backgroundColor = .purple
+            bestCell.bestLabel.backgroundColor = .black
+            return bestCell
+        default:
+            return UICollectionViewCell()
+        }
+    }
+    
+    
 }
 
 extension HomePageCell: UITableViewDataSource {
@@ -43,14 +73,6 @@ extension HomePageCell: UITableViewDataSource {
                 break
             }
             return kulryRecommandCell
-        case newProductTableView:
-            guard let newProductCell = tableView.dequeueReusableCell(withIdentifier: NewProductTableViewCell.identifier, for: indexPath) as? NewProductTableViewCell else { fatalError() }
-            newProductCell.backgroundColor = .orange
-            return newProductCell
-        case bestTableView:
-            guard let bestCell = tableView.dequeueReusableCell(withIdentifier: BestTableViewCell.identifier, for: indexPath) as? BestTableViewCell else { fatalError() }
-            bestCell.backgroundColor = .yellow
-            return bestCell
         case shoppingTableView:
             guard let shoppingCell = tableView.dequeueReusableCell(withIdentifier: ShoppingTableViewCell.identifier, for: indexPath) as? ShoppingTableViewCell else { fatalError() }
             shoppingCell.backgroundColor = .green
@@ -63,43 +85,11 @@ extension HomePageCell: UITableViewDataSource {
            return UITableViewCell()
         }
     }
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        switch tableView {
-//        case kulryRecommandTableView:
-//            switch indexPath {
-//            case [0, 1]:
-//                return 150
-//                print(123)
-//            default:
-//                return 150
-//            }
-//        case newProductTableView:
-//            return 140
-//        case bestTableView:
-//            return 140
-//        case shoppingTableView:
-//            return 140
-//        case hotDealTableView:
-//            return 140
-//
-//        default:
-//            return 200
-//        }
-//    }
 }
 
 // MARK: - UI
 extension HomePageCell {
-//    final private func setUI() {
-//        setBasics()
-//        setLayout()
-//    }
-//    final private func setBasics() {
-//
-//    }
-//    final private func setLayout() {
-//
-//    }
+
     func setKulryRecommandTableView() {
         contentView.addSubview(kulryRecommandTableView)
         kulryRecommandTableView.snp.makeConstraints {
@@ -111,23 +101,33 @@ extension HomePageCell {
         kulryRecommandTableView.rowHeight = 220
 
     }
-    func setNewProductTableView() {
-        contentView.addSubview(newProductTableView)
-        newProductTableView.snp.makeConstraints {
+    func setNewProductCollectionView() {
+        contentView.addSubview(newProductCollectionView)
+        newProductCollectionView.snp.makeConstraints {
             $0.leading.top.trailing.bottom.equalToSuperview()
         }
-        newProductTableView.dataSource = self
-        newProductTableView.register(NewProductTableViewCell.self, forCellReuseIdentifier: NewProductTableViewCell.identifier)
-        newProductTableView.backgroundColor = .orange
+        newProductCollectionView.dataSource = self
+        newProductCollectionView.register(NewProductCollectionViewCell.self, forCellWithReuseIdentifier: NewProductCollectionViewCell.identifier)
+        newProductCollectionView.backgroundColor = .orange
+        newProductCollectionViewLayout.scrollDirection = .vertical
+        newProductCollectionViewLayout.minimumInteritemSpacing = 0
+        newProductCollectionViewLayout.minimumLineSpacing = 10
+        newProductCollectionViewLayout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+        newProductCollectionViewLayout.itemSize = CGSize(width: (contentView.frame.width / 2) - 20, height: 270 )
     }
     func setBestTableView() {
-        contentView.addSubview(bestTableView)
-        bestTableView.snp.makeConstraints {
+        contentView.addSubview(bestCollectionView)
+        bestCollectionView.snp.makeConstraints {
             $0.leading.top.trailing.bottom.equalToSuperview()
         }
-        bestTableView.dataSource = self
-        bestTableView.register(BestTableViewCell.self, forCellReuseIdentifier: BestTableViewCell.identifier)
-        bestTableView.backgroundColor = .yellow
+        bestCollectionView.dataSource = self
+        bestCollectionView.register(bestCollectionViewCell.self, forCellWithReuseIdentifier: bestCollectionViewCell.identifier)
+        bestCollectionView.backgroundColor = .yellow
+        bestCollectionViewLayout.scrollDirection = .vertical
+        bestCollectionViewLayout.minimumInteritemSpacing = 0
+        bestCollectionViewLayout.minimumLineSpacing = 10
+        bestCollectionViewLayout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+        bestCollectionViewLayout.itemSize = CGSize(width: (contentView.frame.width / 2) - 20, height: 270 )
     }
     func setShoppingTableView() {
         contentView.addSubview(shoppingTableView)
@@ -147,8 +147,6 @@ extension HomePageCell {
         hotDealTableView.register(HotDealTableViewCell.self, forCellReuseIdentifier: HotDealTableViewCell.identifier)
         hotDealTableView.rowHeight = 200
         hotDealTableView.separatorStyle = UITableViewCell.SeparatorStyle.none
-
-
     }
     
 }

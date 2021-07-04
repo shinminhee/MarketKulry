@@ -43,7 +43,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         case [0, 0]:
             cell.setKulryRecommandTableView()
         case [0, 1]:
-            cell.setNewProductTableView()
+            cell.setNewProductCollectionView()
         case [0, 2]:
             cell.setBestTableView()
         case [0, 3]:

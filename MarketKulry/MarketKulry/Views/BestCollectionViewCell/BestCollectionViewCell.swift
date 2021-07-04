@@ -1,5 +1,5 @@
 //
-//  NewProductTableViewCell.swift
+//  BestTableViewCell.swift
 //  MarketKulry
 //
 //  Created by 신민희 on 2021/06/25.
@@ -7,11 +7,11 @@
 
 import UIKit
 
-class NewProductCollectionViewCell: UICollectionViewCell {
-
-    static let identifier = "NewProductCollectionViewCell"
-    let productImage = UIImageView()
-    let productLabel = UILabel()
+class bestCollectionViewCell: UICollectionViewCell {
+    
+    static let identifier = "bestCollectionViewCell"
+    let bestImage = UIImageView()
+    let bestLabel = UILabel()
    
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -24,7 +24,7 @@ class NewProductCollectionViewCell: UICollectionViewCell {
    }
 }
 
-extension NewProductCollectionViewCell {
+extension bestCollectionViewCell {
    final private func setUI() {
        setBasic()
        setLayout()
@@ -33,15 +33,15 @@ extension NewProductCollectionViewCell {
        
    }
    final private func setLayout() {
-    [productImage, productLabel].forEach {
+    [bestImage, bestLabel].forEach {
         contentView.addSubview($0)
     }
-    productImage.snp.makeConstraints {
+    bestImage.snp.makeConstraints {
         $0.top.leading.trailing.equalToSuperview()
         $0.height.equalTo(170)
     }
-    productLabel.snp.makeConstraints {
-        $0.top.equalTo(productImage.snp.bottom)
+    bestLabel.snp.makeConstraints {
+        $0.top.equalTo(bestImage.snp.bottom)
         $0.leading.trailing.bottom.equalToSuperview()
     }
        

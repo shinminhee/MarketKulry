@@ -17,5 +17,4 @@ class SearchAddressViewController: UIViewController {
         self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black]
 
     }
-
 }

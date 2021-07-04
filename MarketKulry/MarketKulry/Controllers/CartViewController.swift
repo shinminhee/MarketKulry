@@ -13,9 +13,8 @@ class CartViewController: UIViewController {
         super.viewDidLoad()
         setLeftBarItems()
         view.backgroundColor = .white
-        navigationController?.navigationBar.topItem?.title = "장바구니"
+        self.navigationController?.navigationBar.topItem?.title = "장바구니"        
         self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black]
 
     }
-
 }
